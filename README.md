@@ -83,3 +83,13 @@ print(CL_ensemble_graph)
 | 함수명 | 설명 |
 | :--- | :--- |
 | `set_init_BA(self)` | BA graph 생성에 사용될 초기 노드수와 새로 추가하는 노드가 가지고 올 미연결 엣지수를 계산산해 반환한다. <br> 예외 처리 <br> (1) $N$가 0 일 때와 (2) 엣지 수가 0 일 때는 연결 확률을 계산할 수 없도록 한다.|
+| `choose_target_node(self, existing_nodes:list, G:nx.Graph)` | BA graph 생성 과정 중 새로 들어온 노드가 엣지를 연결할 노드를 고르는 함수이다. 선호적 연결 규칙을 사용한다. 그래프의 현재 노드 리스트와 그래프 자체를 매개변수로 받는다.|
+| `create_BA_graph(self)` | 초기 노드수 m0와 엣지수 m을 사용해 BA graph 생성해 반환한다. 이 때 노드 특성은 유지되지 않는다.|
+
+6. 앙상블 및 분석하는 함수
+
+| 함수명 | 설명 |
+| :--- | :--- |
+| `create_random_graph_ensemble(self, random_graph, num_simulations)` | 무작위 그래프를 선텍하면 num_simulation 수 만큼 무작위 그래프를 생성해 리스트로 반환한다.|
+| `degree_distribution(self, graph=None)` | 입력 받은 그래프의 차수 분포를 히스토그램으로 계산하고, array 형태로 반환한다.|
+| `ensemble_degree_distributions(self, ensemble_graphs)` | ensemble 그래프 리스트를 입력 받아 차수 분포 array들의 리스트를 반환한다.|
