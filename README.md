@@ -41,10 +41,11 @@ print(CL_ensemble_graph)
 ```
 
 ## 클래스 설명
-1. 
-2. random_graph_list
-- 생성 가능한 무작위 그래프 이름을 출력해준다.
-- (ER, configuration, chunglu, BA)
+1. 초기화 및 정보 확인
+ | 함수명 | 설명 |
+| :--- | :--- |
+| `__init__(self, G)` | 클래스를 초기화하고, 입력 그래프 $G$의 기본 속성을 설정한다. 모델에 사용하는 초기 매개변수도 함께 설정한다. |
+| `random_graph_list(self)` | 생성 가능한 무작위 그래프 이름을 출력해준다. (ER, configuration, chunglu, BA)이 있다. |
 
 3. ER 그래프를 만드는 함수
 - ER 그래프란 ?\
