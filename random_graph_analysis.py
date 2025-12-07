@@ -74,7 +74,7 @@ class RandomGraphAnalysis():
     Configuration graph 생성 함수
 
     담당자: 이해정
-    예외처리: (1) 차수 개수 짝수 확인 (2) 차수 0 이상 확인
+    예외처리: (1) 차수 합 짝수 확인 (2) 차수 0 이상 확인
     '''
 
     # error for exception
