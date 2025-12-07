@@ -1,7 +1,7 @@
 # random_network_maker
 - 원본 그래프를 입력받아 그래프 특성을 사용해 무작위 그래프 (ER, Configuration, Chung-lu, BA)을 만들려고 한다.
 
-##클래스 설명
+## 클래스 설명
 1. random_graph_list
 - 만들 수 있는 무작위 그래프 이름을 나열한다. 리스트에서 정의된 이름을 넣어야 그래프를 만들 수 있다.
 
