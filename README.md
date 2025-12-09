@@ -5,12 +5,12 @@
 ## 사용 방법
 본 방법은 코랩 환경에서 실행하다고 가정하고 설명을 하겠다.
 1. 패키지 설치
-```
+```python
 !git clone https://github.com/remote0612/random_network_maker.git
 %cd ./random_network_maker/
 ```
 2. 클래스 초기화
-```
+```python
 #그래프 예시 (파일 안에 있는 정치 도서 구매 그래프 사용할 경우)
 import networks as nx
 G = nx.read_gml('./random_network_maker/polbooks.gml')
@@ -19,7 +19,7 @@ from random_graph_analysis import *
 maker= RandomGraphAnalysis(G)
 ```
 3. 무작위 그래프 앙상블 생성
-```
+```python
 #그래프 이름, 시뮬레이션 수를 차례대로 입력한다.
 
 # ex1. 100개의 ER 그래프 생성
@@ -30,7 +30,7 @@ CL_ensemble_graph=maker.create_random_graph_ensemble("chunglu",20)
 ```
 
 4. 차수 분포 분석
-```
+```python
 #기존 그래프 차수 분석
 orignal=maker.degree_distribution()
 print(orignal)
